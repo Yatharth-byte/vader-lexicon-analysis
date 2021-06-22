@@ -11,7 +11,7 @@ oput_dict =  analyzer.polarity_scores(iput)
 col1, col2, col3 = st.beta_columns(3)
 
 if st.button('Analyze'):
-  st.header('Score : ')
+  
   with col1:
     st.header('**Negative** :angry:')
     st.header(int(oput_dict['neg']*100))
