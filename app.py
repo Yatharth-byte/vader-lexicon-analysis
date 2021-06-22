@@ -13,13 +13,13 @@ col1, col2, col3 = st.beta_columns(3)
 if st.button('Analyze'):
   with col1:
     st.header('**Negative** :angry:')
-    st.header(int(oput_dict['neg']*100))
+    st.header('Score : ',int(oput_dict['neg']*100))
   with col2:
     st.header('**Neutral** :unamused:')
-    st.header(int(oput_dict['neu']*100))
+    st.header('Score : ',int(oput_dict['neu']*100))
   with col3:
     st.header('**Positive** :smile:')
-    st.header(int(oput_dict['pos']*100))
+    st.header('Score : ',int(oput_dict['pos']*100))
   if oput_dict['compound'] >= 0.05:
     st.write("Its ",int(oput_dict['pos']*100),"% Positive.")
   elif oput_dict['compound'] <= -0.05:
