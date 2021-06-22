@@ -22,9 +22,9 @@ if st.button('Analyze'):
     st.header('**Positive** :smile:')
     st.header(int(oput_dict['pos']*100))
   if oput_dict['compound'] >= 0.05:
-    st.header("Its ",int(oput_dict['pos']*100),"% Positive.")
+    st.write("Its ",int(oput_dict['pos']*100),"% Positive.")
   elif oput_dict['compound'] <= -0.05:
-    st.header("Its ",int(oput_dict['neg']*100),"% Negative.")
+    st.write("Its ",int(oput_dict['neg']*100),"% Negative.")
   else:
-    st.header("Its ",int(oput_dict['neu']*100),"% Neutral.") 
+    st.write("Its ",int(oput_dict['neu']*100),"% Neutral.") 
  
