@@ -3,7 +3,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 analyzer = SentimentIntensityAnalyzer()
 
-st.title("Sentimental                                           Analysis Using Lexicon Based Approach...")
+st.title("Analysis Using Lexicon Based Approach...")
 st.header("Please use proper spelling!")
 
 iput = st.text_input("Enter Text:")
